@@ -45,18 +45,17 @@ int main(void)
     float index1 = 0.296 * s;
     float indexResult = index0 - index1 - 15.8;
 
-    // Adding conditions to determine grade levels
+    // Conditions to determine grade levels
     if (indexResult < 1)
     {
         printf("Before Grade 1\n");
     }
 
-    // If grade level is not 1 then check for second condition
-    else if (indexResult > 16)
+      else if (indexResult > 16)
     {
         printf("Grade 16+\n");
     }
-    // Else if grade level is not 16 then  print 16+
+   
     else
     {
         printf("Grade %g\n", round(indexResult));
